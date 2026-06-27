@@ -1,0 +1,542 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fff, #ff4500);
+    color: #3c2a1e;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family:sans-serif;
+    font-weight: bold;
+    color: #864730;
+    height: 14px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4500;
+}
+
+.logo span {
+    color: #3c2a1e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3c2a1e;
+    font-weight: bold;
+}
+
+.logout {
+    background: #ff4500;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* Welcome Section */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #864730;
+    font-size: 28px;
+}
+
+/* Categories Section */
+.categories {
+    padding: 40px;
+}
+
+h2 {
+    text-align: left;
+    
+    margin-bottom: 20px;
+  
+    color: white; /* ✅ لون الكتابة أبيض عشان يكون واضح */
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.category {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.category p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.category a {
+    text-decoration: none;
+    color: #ff4500;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #080300;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    margin-top: 40px;
+}
+
+.footer-logo p {
+    margin: 5px 0;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+/* ✅ زرار Post Product */
+#toggleProductForm {
+    display: block;
+    margin: 20px auto;
+    background-color: #ff4500;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#toggleProductForm:hover {
+    background-color: #d93c00;
+}
+
+/* ✅ تنسيق الفورم */
+#add-product-section {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#add-product-section h2 {
+    color: #ff4500;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* ✅ ترتيب الحقول تحت بعض */
+#addProductForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#addProductForm input,
+#addProductForm textarea,
+#addProductForm select {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#addProductForm input:focus,
+#addProductForm textarea:focus,
+#addProductForm select:focus {
+    border-color: #ff4500;
+}
+
+/* ✅ زرار الإضافة */
+#addProductForm button {
+    background-color: #ff4500;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#addProductForm button:hover {
+    background-color: #d93c00;
+}
+.post{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+/* ✅ تصميم الفيديو */
+.video-section {
+    width: 100%;
+    height: 500px; /* ✅ صغري الطول حسب الحاجة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 0px; /* ✅ نزلي الفيديو تحت الهيدر */
+}
+
+.video-section video {
+    width: 100%; /* ✅ خلي العرض 100% من الشاشة */
+    height: 100%; /* ✅ خلي الطول هو اللي متحكم فيه */
+    object-fit: cover; /* ✅ يمنع القص ويغطي المساحة */
+}
+
+.video-section h1 {
+    position: absolute;
+    /*✅نخليهفوقالفيديو*/top: 70%;
+    /*✅يجيفيالنص*/left: 50%;
+    transform: translate(-50%, -50%);
+    /*✅يخليهفيالمركزتمامًا*/color: white;
+    /*✅لونالكتابةأبيضعشانيكونواضح*/font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    
+ 
+}
+.our-services {
+    padding: 20px;
+    width: 100%;
+}
+
+.our-services h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left; /* لو عايزة العنوان يفضل على الشمال */
+    margin-left: 0px; /* يبعد العنوان قليلاً عن اليسار */
+}
+
+.our-services img {
+    width: 90%; /* يجعل الصورة تأخذ 90% من عرض الصفحة */
+    max-width: 1200px; /* أقصى عرض */
+    display: block;
+    margin: 0 auto; /* لتوسيط الصورة */
+}
+/* ✅ تنسيق زرار التحديث */
+.update-btn {
+    background-color: #f0ad4e;
+}
+
+.update-btn:hover {
+    background-color: #ec971f;
+}
+
+/* ✅ تنسيق زرار الحذف */
+.delete-btn {
+    background-color: #d9534f;
+}
+
+.delete-btn:hover {
+    background-color: #b52b27;
+}
+
+
+
+
+
+
+
+/* ✅ تنسيق قسم المنتجات */
+#products-section {
+    padding: 20px;
+    text-align: center;
+}
+
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* تقليل المسافة بين الكروت */
+    justify-content: center;
+}
+
+/* ✅ تصميم كارد المنتج */
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 230px; /* ✅ تقليل العرض */
+    padding: 12px; /* ✅ تقليل المسافات الداخلية */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ تصغير حجم صورة المنتج */
+.product-card img {
+    width: 100%;
+    height: 150px; /* ✅ تقليل الارتفاع */
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* ✅ تصغير حجم النصوص */
+.product-card h3 {
+    font-size: 16px; /* ✅ تقليل حجم العنوان */
+    margin: 8px 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 12px; /* ✅ تصغير حجم الوصف */
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* ✅ تصغير حجم السعر */
+.product-card .price {
+    font-size: 14px; /* ✅ تقليل حجم السعر */
+    font-weight: bold;
+    color: #ff4500;
+    margin-bottom: 8px;
+}
+
+/* ✅ تصغير الأزرار */
+.product-card button {
+    display: block;
+    width: 100%;
+    padding: 6px; /* ✅ تقليل الارتفاع */
+    border: none;
+    border-radius: 4px;
+    font-size: 12px; /* ✅ تصغير الخط */
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* ✅ زر Order Now */
+.product-card button:first-of-type {
+    background: #007bff;
+    color: white;
+}
+
+.product-card button:first-of-type:hover {
+    background: #0056b3;
+}
+
+/* ✅ زر Update */
+.product-card .update-btn {
+    background-color: #f0ad4e;
+    color: white;
+    margin-top: 4px;
+}
+
+.product-card .update-btn:hover {
+    background-color: #ec971f;
+}
+
+/* ✅ زر Delete */
+.product-card .delete-btn {
+    background-color: #d9534f;
+    color: white;
+    margin-top: 4px;
+}
+
+.product-card .delete-btn:hover {
+    background-color: #b52b27;
+}
+/* الكونتينر الرئيسي */
+.search-container {
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  /* تنسيق حقل الإدخال */
+  .search-form input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  /* زر البحث */
+  .search-form button {
+    display: none; /* لأنه مش مستخدم حاليًا */
+  }
+  
+  /* قائمة النتائج */
+  #search-results {
+    position: absolute;
+    top: 100%; /* تحت الإنبت مباشرة */
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 10;
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  /* عنصر نتيجة */
+  .search-item {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+  }
+  
+  .search-item:last-child {
+    border-bottom: none;
+  }
+  
+  .search-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .search-item a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-weight: 500;
+  }
+  #search-results {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+    gap: 10px;
+}
+
+.search-card {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.search-card:hover {
+    background-color: #f9f9f9;
+}
+
+.search-card-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.search-card-details h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-card-details p {
+    margin: 4px 0 0;
+    color: #777;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-card-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    gap: 12px;
+    width: 100%;
+}
+  

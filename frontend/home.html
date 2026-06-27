@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handmade Treasure</title>
+  <link rel="stylesheet" href="./homes.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo" style="display: flex; align-items: center; font-size: 24px; font-weight: bold;">
+      <span
+        style="display: inline-block; width: 40px; height: 40px; background: url('./img/شعار_logo_فخار_بني__2_-removebg-preview.png') no-repeat center; background-size: contain; margin-right: 8px;"></span>
+      Handmade <span style="color: #ff4500;">Treasure</span>
+    </div>
+    <!-- في جزء الهيدر أو مكان بارز -->
+    <div class="search-container">
+      <form id="live-search-form" class="search-form">
+        <input type="text" name="q" id="search-input" placeholder="search for products..." required>
+        <button type="submit" disabled>
+          <i class="fas fa-search"></i> search
+        </button>
+      </form>
+
+      <!-- نتائج البحث -->
+      <div id="search-results"></div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="./home.html">Categories</a></li>
+        <li><a href="./Favourite.html">Favourite</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#" class="logout" id="logout">log out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ✅ فيديو الترحيب -->
+  <section class="video-section">
+    <h1>Welcome <span id="username">!!!</span>,</h1>
+    <video autoplay loop muted playsinline>
+      <source src="./img/handmade treasure video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+
+  <main>
+    <h2 class="post">Post New Product</h2>
+
+    <button id="toggleProductForm">Post Product</button>
+
+    <!-- ✅ نموذج إضافة منتج - يكون مخفي في البداية -->
+    <section id="add-product-section" style="display: none;">
+
+      <form id="addProductForm">
+        <input type="text" id="productTitle" placeholder="Product Title" required>
+        <textarea id="productDescription" placeholder="Description" required></textarea>
+        <input type="number" id="productPrice" placeholder="Price" required>
+
+        <label for="productCategory">Category:</label>
+        <select id="productCategory" required>
+          <option value="pottery">Pottery & Woods Art</option>
+          <option value="accessories">Accessories & Bags</option>
+          <option value="crochet">Crochet & Macrame</option>
+          <option value="artwork">Art Work</option>
+        </select>
+
+
+        <input type="text" id="productImage" placeholder="Image URL" required>
+        <button type="submit">Add Product</button>
+      </form>
+    </section>
+
+    <section class="categories">
+      <h2>Categories</h2>
+      <div class="grid">
+        <div class="category">
+          <img src="./img/060c1daa49b41af3422ee1bd5e05493f.jpg" alt="Pottery & Wood Art">
+          <p>Pottery & Woods Art</p>
+          <a href="./pottery.html">Explore Now →</a>
+        </div>
+        <div class="category">
+          <img src="./img/istockphoto-1403250565-612x612.jpg" alt="Accessories & Bags">
+          <p>Accessories & Bags</p>
+          <a href="./accessories.html">Explore Now →</a>
+        </div>
+        <div class="category">
+          <img src="./img/crochet.jpg" alt="Crochet & Macrame">
+          <p>Crochet & Macrame</p>
+          <a href="./corchet.html">Explore Now →</a>
+        </div>
+        <div class="category">
+          <img src="./img/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Crochet & Macrame">
+          <p>Art work</p>
+          <a href="./artwork.html">Explore Now →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="our-services">
+    <h2>Our Services :</h2>
+    <br>
+    <br>
+    <img src="./img/our services .png" alt="Our Services">
+  </section>
+  <br>
+  <br>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="./img/final.png" alt="" style=" width: 80px; height: 100px;">
+      <p>Marketplace for buying and selling handmade products.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.getElementById("toggleProductForm");
+      const addProductSection = document.getElementById("add-product-section");
+
+      toggleButton.addEventListener("click", function () {
+        // ✅ التبديل بين الإظهار والإخفاء
+        if (addProductSection.style.display === "none") {
+          addProductSection.style.display = "block";
+        } else {
+          addProductSection.style.display = "none";
+        }
+      });
+    });
+  </script>
+  <script src="category.js"></script>
+  <script src="productss.js"></script>
+  <script src="search.js"></script>
+
+
+</body>
+
+</html>
